@@ -12,6 +12,9 @@
         <module>heima-leadnews-common</module>
         <module>heima-leadnews-utils</module>
         <module>heima-leadnews-model</module>
+        <module>heima-leadnews-feign-api</module>
+        <module>heima-leadnews-gateway</module>
+        <module>heima-leadnews-service</module>
     </modules>
 
     <!-- 继承Spring boot工程 -->
@@ -37,7 +40,7 @@
         <mysql.version>5.1.46</mysql.version>
         <mybatis.version>3.5.1</mybatis.version>
         <mybatis.spring.version>2.0.1</mybatis.spring.version>
-        <mybatis.plus.version>3.4.1</mybatis.plus.version>
+        <mybatis.plus.version>3.5.4</mybatis.plus.version>  <!--对比之前的版本，提升了版本号-->
         <lang3.version>3.5</lang3.version>
         <pagehelper.version>1.2.3</pagehelper.version>
         <jsoup.version>1.10.2</jsoup.version>
@@ -191,11 +194,12 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson.version}</version>
-            </dependency><dependency>
-            <groupId>com.fasterxml.jackson.dataformat</groupId>
-            <artifactId>jackson-dataformat-cbor</artifactId>
-            <version>${fastjson.dataformat.version}</version>
-        </dependency>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.dataformat</groupId>
+                <artifactId>jackson-dataformat-cbor</artifactId>
+                <version>${fastjson.dataformat.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.fasterxml.jackson.dataformat</groupId>
                 <artifactId>jackson-dataformat-xml</artifactId>
